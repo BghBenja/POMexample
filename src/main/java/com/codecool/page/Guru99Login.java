@@ -21,4 +21,38 @@ public class Guru99Login {
         this.driver = driver;
 
     }
+
+    public void setUserName(String strUsername) {
+
+        driver.findElement(user99GuruName).sendKeys(strUsername);
+
+    }
+
+    public void setPassword(String strPassword) {
+
+        driver.findElement(password99Guru).sendKeys(strPassword);
+
+    }
+
+    public void clickLogin() {
+
+        driver.findElement(login).click();
+
+    }
+
+    public String getLoginTitle() {
+
+        return driver.findElement(titleText).getText();
+
+    }
+
+    public void loginToGuru99(String strUsername, String strPassword) {
+
+        this.setUserName(strUsername);
+
+        this.setPassword(strPassword);
+
+        this.clickLogin();
+
+    }
 }
