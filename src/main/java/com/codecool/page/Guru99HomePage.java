@@ -16,4 +16,10 @@ public class Guru99HomePage {
         this.driver = driver;
 
     }
+
+    public String getHomePageDashboardUserName() {
+
+        return driver.findElement(homePageUserName).getText();
+
+    }
 }
