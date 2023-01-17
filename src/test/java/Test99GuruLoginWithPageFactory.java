@@ -28,7 +28,7 @@ public class Test99GuruLoginWithPageFactory {
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.get("http://guru99.com/V4/");
+        driver.get("http://demo.guru99.com/V4/");
 
     }
 
