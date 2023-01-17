@@ -5,7 +5,7 @@ import com.codecool.page.Guru99Login;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -16,7 +16,8 @@ import org.testng.annotations.Test;
 
 public class Test99GuruLogin {
 
-    String driverPath = "/home/bghbenja/Project/PythonWS/TEST/chromedriver_linux64/chromedriver";
+    //String driverPath = "/home/bghbenja/Project/PythonWS/TEST/chromedriver_linux64/chromedriver";
+    String driverPath = "/home/bghbenja/Project/PythonWS/TEST/geckodriver-v0.32.0-linux64/geckodriver";
 
     WebDriver driver;
 
@@ -30,7 +31,8 @@ public class Test99GuruLogin {
 
         System.setProperty("webdriver.gecko.driver", driverPath);
 
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
+        driver = new FirefoxDriver();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
