@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Test99GuruLoginWithPageFactory {
 
-    String driverPath = "/home/bghbenja/Project/PythonWS/TEST/geckodriver-v0.32.0-linux64/geckodriver"
+    String driverPath = "/home/bghbenja/Project/PythonWS/TEST/geckodriver-v0.32.0-linux64/geckodriver";
 
     WebDriver driver;
 
