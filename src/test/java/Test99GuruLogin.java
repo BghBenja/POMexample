@@ -50,7 +50,7 @@ public class Test99GuruLogin {
 
         Assert.assertTrue(loginPageTitle.toLowerCase().contains("guru99 bank"));
 
-        objLogin.loginToGuru99("mgr123", "mgr123");
+        objLogin.loginToGuru99("mgr123", "mgr!23");
 
         objHomePage = new Guru99HomePage(driver);
 
