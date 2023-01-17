@@ -30,5 +30,40 @@ public class Guru99Login {
         this.driver = driver;
 
         PageFactory.initElements(driver, this);
+
+    }
+
+    public void setUserName(String strUserName){
+
+        user99GuruName.sendKeys(strUserName);
+
+    }
+
+    public void setPassword(String strPassword){
+
+        password99Guru.sendKeys(strPassword);
+
+    }
+
+    public void clickLogin(){
+
+        login.click();
+
+    }
+
+    public String getLoginTitle(){
+
+        return titleText.getText();
+
+    }
+
+    public void loginToGuru99(String strUserName, String strPassword){
+
+        this.setUserName(strUserName);
+
+        this.setPassword(strPassword);
+
+        this.clickLogin();
+
     }
 }
